@@ -29,6 +29,16 @@
 
 // Code Here 
 
+
+ function first (names, callback) {
+  return callback(fName);
+}
+
+function firstName(fName) {
+  return names[0];
+}
+first(names, firstName)
+
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
@@ -48,6 +58,26 @@ first(names, function(firstName){
 */
 
 //Code Here
+function last(names, callback2) {
+  return callback2(lastName);
+}
+function lastName(lastName) {
+var lName = names[names.length - 1];
+return lName;
+}
+last(names, lastName);
+
+
+
+// function last(names, callback2) {
+//   return callback2(lElement);
+// }
+// function lElement(lElement) {
+// var lName = names.pop();
+// return lName;
+// }
+// last(names, lElement);
+
 
 // Do not edit the code below.
 last(names, function(lastName){
@@ -66,6 +96,13 @@ last(names, function(lastName){
 */
 
 //Code Here
+function multiply(num1, num2, answer) {
+  return answer(num1, num2);
+}
+function ans(num1, num2) {
+return num1 * num2;
+}
+multiply(4, 3, answer);
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
@@ -85,6 +122,20 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+function contains(arr, name, callback4) {
+  return callback4(result);
+}
+
+function checkName(name) {
+for ( let i = 0; i < names.length; i++ ) {
+    if ( names[i] === name ) {
+      return callback4() = true;
+    } else {
+      return callback4() = false;
+    }
+}
+}
+contains(name, "Tyler", checkName );
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
@@ -106,6 +157,21 @@ contains(names, 'Colt', function(result){
 */
 
 //Code Here
+function uniq(arr, callback5) {
+  return callback5();
+}
+
+function removeDuplicate() {
+  for ( let i = 0; i < names.length; i++ ) {
+    if ( names[i] === names[i] ) {
+     names.splice(i, 2);
+    }
+    return names;
+  }
+}
+uniq(names, removeDuplicate);
+
+
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
